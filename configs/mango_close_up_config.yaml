@@ -1,0 +1,44 @@
+# AgriScan Configuration: Close-Up Mango Leaf Classification
+# Uses EfficientNet-B0 transfer learning (Tan & Le, 2019)
+# Targets SAR-MLD1-2025 mango leaf pathology dataset (5 classes)
+
+analysis_mode: close_up
+supported_crops:
+  - mango
+  - tomato
+  - corn
+  - wheat
+  - apple
+  - general_crop
+primary_crop: mango
+seed: 42
+device: auto
+output_dir: checkpoints/mango_efficientnet_b0
+model_version: 1.0.0
+
+close_up:
+  backbone: efficientnet_b0
+  pretrained: true
+  freeze_backbone: true
+  fine_tune_epochs: 3
+  dropout: 0.2
+  learning_rate: 0.001
+  fine_tune_lr: 0.0001
+  weight_decay: 0.0001
+  batch_size: 16
+  epochs: 10
+  early_stopping_patience: 3
+  metric_for_best_checkpoint: val_macro_f1
+  use_class_weights: true
+  abstention_threshold: 0.70
+  image_size: 224
+
+data:
+  dataset_dir: data/mango_sar_mld1
+  metadata_file: data/mango_sar_mld1/metadata.csv
+  split_group_column: session_id
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  num_workers: 0
+  max_duplicate_check_samples: 5000

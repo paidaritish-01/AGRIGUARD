@@ -1,0 +1,53 @@
+{
+  "image_id": "ortho_flight_session01.jpg",
+  "analysis_mode": "aerial",
+  "model_version": "1.0.0",
+  "supported_crop": "general_crop",
+  "predicted_label": "visible_crop_stress",
+  "model_score": 0.8841,
+  "score_type": "raw_softmax_confidence",
+  "status": "success",
+  "message": "Aerial analysis identified 2 anomaly zones across 16 tiles.",
+  "bounding_boxes": [
+    {
+      "bbox": [120.0, 150.0, 280.0, 310.0],
+      "confidence": 0.8841,
+      "label": "visible_crop_stress"
+    },
+    {
+      "bbox": [600.0, 520.0, 780.0, 700.0],
+      "confidence": 0.7932,
+      "label": "abnormal_canopy_void"
+    }
+  ],
+  "tiling_summary": {
+    "total_tiles_analyzed": 16,
+    "tile_distribution": {
+      "healthy_canopy": 14,
+      "visible_crop_stress": 1,
+      "abnormal_canopy_void": 1
+    },
+    "anomalies_detected": 2,
+    "confidence_threshold": 0.65,
+    "is_trained_model": false
+  },
+  "gps_metadata": {
+    "latitude": 36.678,
+    "longitude": -121.656,
+    "altitude_m": 45.0,
+    "has_gps": true,
+    "note": "Drone/camera GPS metadata reflects the aircraft position and altitude at exposure time. It does not represent the exact ground location of an individual plant due to camera tilt, altitude, lens field-of-view, and surface topography."
+  },
+  "processing_time_ms": 142.18,
+  "is_demo_mode": true,
+  "relevant_limitations": [
+    "AERIAL ADAPTER NOTICE: No trained aerial weights supplied; using uncalibrated contract adapter for software integration.",
+    "RGB imagery cannot reliably distinguish disease from nutrient deficiency, water stress, or insect damage without supporting biological evaluation.",
+    "Do not treat models trained on close-up leaf photographs as validated for aerial imagery.",
+    "Sensor GPS metadata reflects drone camera position at exposure time, not the exact coordinate of an individual plant.",
+    "Confidence thresholds mitigate low-confidence in-distribution errors, but do not reliably identify every unsupported crop or out-of-distribution image.",
+    "Automated findings are preliminary screening indicators only. Consult a certified agronomist and conduct ground-truthing before taking agronomic action.",
+    "Strict safety policy: AgriScan does not generate pesticide recommendations.",
+    "Aerial detection reflects canopy-level anomaly zones. Soil moisture, salinity, compaction, or nutrient deficit can mimic biotic disease."
+  ]
+}

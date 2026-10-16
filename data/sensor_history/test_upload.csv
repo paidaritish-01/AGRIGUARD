@@ -1,0 +1,9 @@
+# SYNTHETIC TEST FIXTURE
+timestamp,plot_id,crop,air_temperature_c,relative_humidity_pct,soil_moisture_pct,rainfall_mm,leaf_wetness_hours
+2026-10-10T00:00:00Z,plot_test_01,mango,26.0,90.0,42.0,1.0,2.0
+2026-10-10T02:00:00Z,plot_test_01,mango,25.5,91.0,42.0,0.5,2.0
+2026-10-10T04:00:00Z,plot_test_01,mango,25.0,92.0,42.5,0.0,2.0
+2026-10-10T06:00:00Z,plot_test_01,mango,25.5,91.5,42.5,0.0,2.0
+2026-10-10T08:00:00Z,plot_test_01,mango,27.0,88.0,42.0,0.0,1.5
+2026-10-10T10:00:00Z,plot_test_01,mango,28.0,86.0,41.5,0.0,1.0
+2026-10-10T12:00:00Z,plot_test_01,mango,28.5,85.5,41.5,0.0,1.0

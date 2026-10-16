@@ -1,0 +1,7 @@
+DISCLAIMER: SYNTHETIC FIXTURE NOTICE
+====================================
+The sensor records contained in this directory (`data/synthetic_sensors/`) are purely synthetic fixtures created solely for software testing, API verification, and demonstration of time-window aggregations and risk rule evaluation.
+
+These records do NOT represent real agricultural farm measurements, physical hardware outputs, or ground-truth orchard microclimate readings.
+
+Do NOT use these records to validate agronomic efficacy or make farm management decisions.

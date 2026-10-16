@@ -1,0 +1,35 @@
+analysis_mode: aerial
+supported_crops:
+  - tomato
+  - corn
+  - wheat
+  - apple
+  - general_crop
+primary_crop: general_crop
+seed: 42
+device: auto
+output_dir: checkpoints
+model_version: 1.0.0
+
+aerial:
+  backbone: resnet18
+  tile_size: 512
+  tile_overlap: 0.20
+  min_anomaly_confidence: 0.65
+  nms_iou_threshold: 0.40
+  batch_size: 4
+  epochs: 5
+  learning_rate: 0.001
+  stress_classes:
+    - healthy_canopy
+    - visible_crop_stress
+    - abnormal_canopy_void
+
+data:
+  dataset_dir: data/aerial
+  metadata_file: data/aerial/annotations.json
+  split_group_column: farm_id
+  train_ratio: 0.60
+  val_ratio: 0.20
+  test_ratio: 0.20
+  num_workers: 0

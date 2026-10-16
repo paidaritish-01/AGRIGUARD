@@ -1,0 +1,1 @@
+DISCLAIMER: This is a synthetic dataset fixture created solely for software pipeline verification, test suites, and smoke tests. It CANNOT validate real-world agricultural performance, disease discrimination, or diagnostic efficacy.

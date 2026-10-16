@@ -1,0 +1,14 @@
+{
+  "label_to_idx": {
+    "tomato_bacterial_spot": 0,
+    "tomato_early_blight": 1,
+    "tomato_healthy": 2,
+    "tomato_late_blight": 3
+  },
+  "idx_to_label": {
+    "0": "tomato_bacterial_spot",
+    "1": "tomato_early_blight",
+    "2": "tomato_healthy",
+    "3": "tomato_late_blight"
+  }
+}

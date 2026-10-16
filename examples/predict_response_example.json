@@ -1,0 +1,29 @@
+{
+  "image_id": "tomato_fieldA_leaf042.jpg",
+  "analysis_mode": "close_up",
+  "model_version": "1.0.0",
+  "supported_crop": "tomato",
+  "predicted_label": "tomato_early_blight",
+  "model_score": 0.9124,
+  "score_type": "calibrated_probability",
+  "status": "success",
+  "message": "Inference successful with calibrated_probability = 0.912.",
+  "bounding_boxes": null,
+  "gps_metadata": {
+    "latitude": 36.678125,
+    "longitude": -121.655842,
+    "altitude_m": 42.5,
+    "has_gps": true,
+    "note": "Drone/camera GPS metadata reflects the aircraft position and altitude at exposure time. It does not represent the exact ground location of an individual plant due to camera tilt, altitude, lens field-of-view, and surface topography."
+  },
+  "processing_time_ms": 38.45,
+  "is_demo_mode": false,
+  "relevant_limitations": [
+    "RGB imagery cannot reliably distinguish disease from nutrient deficiency, water stress, or insect damage without supporting biological evaluation.",
+    "Do not treat models trained on close-up leaf photographs as validated for aerial imagery.",
+    "Sensor GPS metadata reflects drone camera position at exposure time, not the exact coordinate of an individual plant.",
+    "Confidence thresholds mitigate low-confidence in-distribution errors, but do not reliably identify every unsupported crop or out-of-distribution image.",
+    "Automated findings are preliminary screening indicators only. Consult a certified agronomist and conduct ground-truthing before taking agronomic action.",
+    "Strict safety policy: AgriScan does not generate pesticide recommendations."
+  ]
+}

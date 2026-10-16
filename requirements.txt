@@ -1,0 +1,15 @@
+# AgriScan: Drone-Assisted Crop Health Monitoring ML Pipeline
+torch>=2.14.0
+torchvision>=0.29.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.8.0
+python-multipart>=0.0.12
+pillow>=10.4.0
+pyyaml>=6.0.1
+scikit-learn>=1.5.0
+scipy>=1.14.0
+numpy>=1.26.0
+httpx>=0.27.0
+pytest>=8.3.0
+anyio>=4.4.0

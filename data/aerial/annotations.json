@@ -1,0 +1,24 @@
+{
+  "image_file": "ortho_farm_A_session_01.jpg",
+  "farm_id": "farm_A",
+  "session_id": "flight_session_01",
+  "flight_altitude_m": 45.0,
+  "gps_lat": 36.678,
+  "gps_lon": -121.656,
+  "annotations": [
+    {
+      "x_min": 120,
+      "y_min": 150,
+      "x_max": 280,
+      "y_max": 310,
+      "label": "visible_crop_stress"
+    },
+    {
+      "x_min": 600,
+      "y_min": 520,
+      "x_max": 780,
+      "y_max": 700,
+      "label": "abnormal_canopy_void"
+    }
+  ]
+}

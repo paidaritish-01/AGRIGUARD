@@ -1,0 +1,16 @@
+{
+  "description": "Example multipart/form-data payload submitted to POST /predict",
+  "endpoint": "POST /predict",
+  "form_parameters": {
+    "analysis_mode": "close_up",
+    "crop": "tomato",
+    "abstention_threshold": 0.70,
+    "use_calibration": true
+  },
+  "file": {
+    "filename": "tomato_fieldA_leaf042.jpg",
+    "content_type": "image/jpeg",
+    "size_bytes": 145892
+  },
+  "curl_command_example": "curl -X POST 'http://127.0.0.1:8000/predict' -F 'file=@sample_leaf.jpg' -F 'analysis_mode=close_up' -F 'crop=tomato' -F 'abstention_threshold=0.70'"
+}

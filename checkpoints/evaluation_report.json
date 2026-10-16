@@ -1,0 +1,119 @@
+{
+  "total_samples": 8,
+  "retained_samples": 4,
+  "abstained_samples": 4,
+  "abstention_rate": 0.5,
+  "abstention_threshold": 0.5,
+  "score_type": "calibrated_probability",
+  "raw_accuracy": 0.5,
+  "retained_accuracy": 1.0,
+  "macro_f1": 0.5,
+  "per_class": {
+    "tomato_bacterial_spot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "tomato_early_blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    },
+    "tomato_healthy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "tomato_late_blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    }
+  },
+  "confusion_matrix": {
+    "matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "labels": [
+      "tomato_bacterial_spot",
+      "tomato_early_blight",
+      "tomato_healthy",
+      "tomato_late_blight"
+    ]
+  },
+  "farm_performance": {
+    "farm_C": {
+      "total_samples": 8,
+      "accuracy": 0.5,
+      "abstained_count": 4,
+      "abstention_rate": 0.5
+    }
+  },
+  "calibration": {
+    "expected_calibration_error": 0.3831,
+    "n_bins": 10,
+    "sample_count": 8,
+    "bins": [
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "count": 3,
+        "accuracy": 0.0,
+        "confidence": 0.347,
+        "calibration_gap": 0.347
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "count": 1,
+        "accuracy": 0.0,
+        "confidence": 0.4554,
+        "calibration_gap": 0.4554
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "count": 2,
+        "accuracy": 1.0,
+        "confidence": 0.5494,
+        "calibration_gap": 0.4506
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "count": 2,
+        "accuracy": 1.0,
+        "confidence": 0.6666,
+        "calibration_gap": 0.3334
+      }
+    ]
+  },
+  "limitations_notice": "Confidence thresholds help filter low-confidence in-distribution samples, but cannot reliably identify every unsupported crop or out-of-distribution image. Raw scores must not be interpreted as calibrated posterior probabilities unless calibrated."
+}
